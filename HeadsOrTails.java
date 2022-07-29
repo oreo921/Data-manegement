@@ -17,6 +17,12 @@ public class HeadsOrTails {
       int heads = 0;
       int tails = 0;
       int chances = 3;
+	   
+      System.out.println("Who are you?");
+      Scanner scan = new Scanner(System.in);
+      String str = scan.next();
+      System.out.println("Hello,"+str);
+	   
       System.out.println("Tossing a coin...");
       for (int i = 1; i<= chances; i++) {
 	  System.out.print("Round"+i+":");
@@ -31,10 +37,10 @@ public class HeadsOrTails {
       System.out.println("Heads: " + heads +", Tails:"+ tails);
    
      if(heads>tails){
-	     System.out.println("You Win!"):
+	     System.out.println(str+" Win!"):
      }
 	   else if(tails>heads){
-		   System.out.println("You lost!");
+		   System.out.println(str+" lost!");
 	   }
 	   
    }
